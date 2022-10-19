@@ -1,0 +1,80 @@
+.preloader-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+    overflow: hidden;
+}
+
+.loader{
+    color: #f5f5f5;
+    font-family: var(--fuente4);
+    font-size: 6rem;
+    font-weight: 500;
+    font-style: italic;
+    letter-spacing: 5px;
+    transition: all .5s;
+}
+
+.loader.gone{
+    opacity: 0;
+}
+
+.name-container{
+    color: #f5f5f5;
+    position: absolute;
+    bottom: 10%;
+    left: 7%;
+    width: 300px;
+    height: 130px;
+}
+
+.name-container .loadername{
+    font-size: 2.8rem;
+    font-weight: 300;
+    letter-spacing: -1px;
+    width: 100%;
+    font-family: var(--fuente5);
+    height: 48px;
+    text-align: justify;
+    transition: .5s;
+}
+
+.loadername.gone{
+    opacity: 0;
+}
+
+.progress-container{
+    overflow: hidden;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+}
+
+.progress-bar{
+    height: 100%;
+    width: 100%;
+    mix-blend-mode: difference;
+    background-color: #f5f5f5;
+    transform: translateX(-100%);
+    animation: progress 9s ease-in-out forwards;
+}
+
+@keyframes progress{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+@keyframes gone{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}

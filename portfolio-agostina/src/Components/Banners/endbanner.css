@@ -1,0 +1,8 @@
+.endbanner{
+    margin-top: 150px;
+    height: 75vh;
+    background-color: rgba(55, 0, 255, 0.068);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

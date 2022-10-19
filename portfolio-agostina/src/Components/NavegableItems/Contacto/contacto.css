@@ -1,0 +1,90 @@
+.section-contacto{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0px  calc(var(--avg-padding) + 40px);
+    overflow: hidden;
+}
+
+.contacto-title{
+    font-size: 4rem;
+    text-transform: uppercase;
+    color: var(--black-color);
+    margin-bottom: 50px;
+    align-self: flex-start;
+    margin-left: 150px;
+    height: 150px;
+}
+
+.contacto-title h1{
+    height: 100px;
+}
+
+.contacto-form{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.39);
+    padding: 20px;
+    border-radius: 5px;
+    font-family: var(--fuente4);
+}
+
+.informacion{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: var(--fuente4);
+}
+
+.nombre{
+    width: 49.6%;
+    height: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.39);
+    padding: 10px;
+
+}
+
+.apellido{
+    width: 49.6%;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.39);
+    height: 100%;
+    font-family: var(--fuente2);
+}
+
+.mensaje{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 490px;
+    font-family: var(--fuente2);
+}
+
+.asunto{
+    margin-bottom: 10px;
+    padding: 10px;
+    overflow: hidden;
+    border: 1px solid rgba(0, 0, 0, 0.39);
+    resize: none;
+    font-family: var(--fuente2);
+}
+
+.cuerpo{
+    margin-bottom: 10px;
+    height: 400px;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.39);
+    resize: none;
+    font-family: var(--fuente2);
+}
+
+.enviar{
+    padding: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: var(--fuente2);
+    border: 1px solid rgba(0, 0, 0, 0.555);
+}

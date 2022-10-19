@@ -1,0 +1,25 @@
+.transform-container{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-top: var(--avg-padding);
+    margin-bottom: var(--avg-padding);
+    white-space: nowrap;
+}
+
+.transform-text{
+    font-size: 5.5rem;
+    letter-spacing: 2px;
+    font-weight: 100;
+    transition: all .1s;
+    color: var(--red-color);
+}
+
+span:nth-child(2){
+    font-style: italic;
+}

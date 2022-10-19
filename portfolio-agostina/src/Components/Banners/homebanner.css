@@ -1,0 +1,25 @@
+.home-banner{
+    height: 83vh;
+    margin: 0px var(--avg-padding);
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.home-banner .title{
+    color: rgba(0, 0, 0, 0.589);
+    position: absolute;
+    font-size: 5rem;
+    top: 80.3%;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+
+.home-banner img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: all 1s;
+    mix-blend-mode: multiply;
+}

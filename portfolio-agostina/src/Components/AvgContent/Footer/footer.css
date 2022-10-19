@@ -1,0 +1,26 @@
+.footer{
+    height: 45vh;
+    background-color: rgba(226, 226, 226, 0.075);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer .greeting h2{
+    font-size: 4rem;
+}
+
+.greeting .italic{
+    font-style: italic;
+}
+
+.footer .media{
+    width: 20%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer .made-by{
+    margin-top: 15px;
+}
