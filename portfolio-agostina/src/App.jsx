@@ -10,7 +10,6 @@ import { Objetos } from "./Components/NavegableItems/Objetos/Objetos";
 import { Styling } from "./Components/NavegableItems/Styling/Styling";
 import { Contacto } from "./Components/NavegableItems/Contacto/Contacto";
 import { LoaderContext } from "./Context/LoaderContext";
-import { Footer } from './Components/AvgContent/Footer/Footer';
 import { Detail } from "./Components/Detail/Detail";
 
 function App() {
@@ -37,7 +36,7 @@ function App() {
   }, [])
 
   
-  if (loader){
+  if (!loader){
     return (
       <CountUp
         start={0}
@@ -46,7 +45,6 @@ function App() {
         duration={10}
         useEasing={true}
         useGrouping={true}
-        separator=","
         suffix={'%'}
         onEnd={ endLoader }
         >
